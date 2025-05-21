@@ -1,6 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal Information | Halacha Yomis</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+      color: #1a202c;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+    }
+
+    .wrapper {
+      max-width: 700px;
+      background: #ffffff;
+      padding: 3rem 2.5rem;
+      border-radius: 14px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+      animation: fadeIn 1s ease-out;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #2d3748;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+
+    a {
+      color: #3182ce;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #718096;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .wrapper {
+        padding: 2rem 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Legal Notice</h1>
+    <p>
+      This website is maintained by Halacha Yomis. All content provided is for informational and compliance purposes only and may not be considered legal or halachic advice.
+    </p>
+    <p>
+      By using this site, you acknowledge and agree to the terms, privacy policies, and halachic disclaimers detailed herein.
+    </p>
+    <p>
+      If you have any questions or concerns, please contact us at
+      <a href="mailto:info@halachayomis.com">info@halachayomis.com</a>.
+    </p>
+    <footer>&copy; 2025 Halacha Yomis. All rights reserved.</footer>
+  </div>
+
+  <script>
+    // Optional enhancement: scroll to top on load (nice polish)
+    window.onload = () => window.scrollTo(0, 0);
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <title>Legal Information</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

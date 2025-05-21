@@ -3,51 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Legal Information | Halacha Yomis</title>
+  <title>Halacha Yomis | Legal Information</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #edf2f7, #e2e8f0);
+      --text-color: #2d3748;
+      --accent-color: #2b6cb0;
+      --card-bg: #ffffff;
+      --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    }
+
     * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
     }
 
     body {
-      margin: 0;
-      padding: 0;
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #f8fafc, #e2e8f0);
-      color: #1a202c;
-      min-height: 100vh;
+      background: var(--bg-gradient);
+      color: var(--text-color);
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
       overflow-x: hidden;
-    }
-
-    .wrapper {
-      max-width: 700px;
-      background: #ffffff;
-      padding: 3rem 2.5rem;
-      border-radius: 14px;
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
       animation: fadeIn 1s ease-out;
     }
 
+    .card {
+      background: var(--card-bg);
+      padding: 3rem 2.5rem;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      max-width: 720px;
+      width: 100%;
+    }
+
     h1 {
-      font-size: 2rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: #2d3748;
+      font-family: 'EB Garamond', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #1a202c;
     }
 
     p {
+      line-height: 1.8;
       font-size: 1.05rem;
-      line-height: 1.7;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1.3rem;
     }
 
     a {
-      color: #3182ce;
+      color: var(--accent-color);
       text-decoration: none;
     }
 
@@ -58,22 +68,28 @@
     footer {
       margin-top: 2rem;
       font-size: 0.9rem;
-      color: #718096;
       text-align: center;
+      color: #718096;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @media (max-width: 600px) {
-      .wrapper {
+      .card {
         padding: 2rem 1.5rem;
       }
 
       h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
 
       p {
@@ -83,143 +99,24 @@
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <h1>Legal Notice</h1>
+  <div class="card">
+    <h1>Legal Information</h1>
     <p>
-      This website is maintained by Halacha Yomis. All content provided is for informational and compliance purposes only and may not be considered legal or halachic advice.
+      Welcome to the official website of <strong>Halacha Yomis</strong>. This page is intended to provide legal and halachic disclaimers regarding the use of our platform and its content. The information presented is for educational and informational purposes only and should not be construed as halachic rulings or legal advice.
     </p>
     <p>
-      By using this site, you acknowledge and agree to the terms, privacy policies, and halachic disclaimers detailed herein.
+      All content is presented in accordance with traditional Torah sources and should be reviewed in consultation with a qualified Rav for practical application. Use of this website constitutes acceptance of our terms of use and privacy policy.
     </p>
     <p>
-      If you have any questions or concerns, please contact us at
+      For questions, concerns, or further clarification, feel free to reach out to us at
       <a href="mailto:info@halachayomis.com">info@halachayomis.com</a>.
     </p>
     <footer>&copy; 2025 Halacha Yomis. All rights reserved.</footer>
   </div>
 
   <script>
-    // Optional enhancement: scroll to top on load (nice polish)
-    window.onload = () => window.scrollTo(0, 0);
+    // Smooth scroll reset on load
+    window.onload = () => window.scrollTo({ top: 0, behavior: 'smooth' });
   </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Legal Information</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f4f6f8;
-      color: #333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-    .container {
-      max-width: 600px;
-      background: #fff;
-      padding: 2rem 2.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    }
-    h1 {
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: #111;
-    }
-    p {
-      line-height: 1.6;
-      font-size: 1rem;
-    }
-    footer {
-      margin-top: 2rem;
-      font-size: 0.85rem;
-      color: #888;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Legal Notice</h1>
-    <p>This website is maintained by My Organization. All information presented here is provided for legal and compliance purposes only. Use of this site constitutes acceptance of our terms, disclaimers, and privacy policy.</p>
-    <p>For more information, please contact us at <a href="mailto:info@yourdomain.org">info@yourdomain.org</a>.</p>
-    <footer>&copy; 2025 My Organization. All rights reserved.</footer>
-  </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Legal Information</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f4f6f8;
-      color: #333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-    .container {
-      max-width: 600px;
-      background: #fff;
-      padding: 2rem 2.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    }
-    h1 {
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: #111;
-    }
-    p {
-      line-height: 1.6;
-      font-size: 1rem;
-    }
-    footer {
-      margin-top: 2rem;
-      font-size: 0.85rem;
-      color: #888;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Legal Notice</h1>
-    <p>This website is maintained by My Organization. All information presented here is provided for legal and compliance purposes only. Use of this site constitutes acceptance of our terms, disclaimers, and privacy policy.</p>
-    <p>For more information, please contact us at <a href="mailto:info@yourdomain.org">info@yourdomain.org</a>.</p>
-    <footer>&copy; 2025 My Organization. All rights reserved.</footer>
-  </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Legal Information</title>
-</head>
-<body>
-  <h1>Legal Notice</h1>
-  <p>This website is maintained by My Organization. All legal disclaimers, policies, and terms apply. Please contact us at info@yourdomain.org with any questions.</p>
 </body>
 </html>
